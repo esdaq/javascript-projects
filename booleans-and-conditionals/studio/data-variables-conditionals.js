@@ -55,5 +55,5 @@ if(preparedForLiftOff) {
   console.log("Fuel Temperature: " + fuelTempCelsius + "°C");
   console.log("Weather Status: " + "clear");
   console.log("***************************");
-  console.log("Have a safe trip astronuats!");
+  console.log("Have a safe trip astronauts!");
 }
