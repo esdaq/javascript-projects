@@ -32,7 +32,7 @@ console.log(astronautStatus === "ready" ? "The Astronuats are ready." : prepared
 console.log(totalMassKg <= 850_000 ? "Total mass does not exceed the maximum limit of 850000" : preparedForLiftOff = false);
 
 // add logic below to verify the fuel temperature is within the appropriate range of -150 and -300
-console.log((minimumFuelTemp >= -300 || maximumFuelTemp <= -150) ?
+console.log((minimumFuelTemp >= -300 && maximumFuelTemp <= -150) ?
  "The fuel temperature is within the appropriate range of -150 and -300" : preparedForLiftOff = false);
 
 // add logic below to verify the fuel level is at 100%
