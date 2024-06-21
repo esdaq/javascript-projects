@@ -11,7 +11,8 @@ function reverseCommas() {
 	let check;
 	let output;
 	//TODO: 2. write the code required for this step
-
+  protoArray1 = protoArray1.split(",");
+  console.log(protoArray1);
 	//NOTE: For the code to run properly, you must return your output.  this needs to be the final line of code within the function's { }.
 	return output;
 }
