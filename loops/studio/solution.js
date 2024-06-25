@@ -31,7 +31,7 @@ function askForNumber() {
   /// CODE YOUR SOLUTION TO PART B here ///
   while (true) {
     numMeals = input.question("How many meals would you like to make? ");
-    if (numMeals >= 1 && numMeals <= 6) {
+    if ((numMeals >= 1 && numMeals <= 6) && isNaN()) {
        break;
     }
   }
