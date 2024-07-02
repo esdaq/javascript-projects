@@ -6,5 +6,17 @@ let nums2 = [-2, 0, -10, -44, 5, 3, 0, 3];
 let nums3 = [200, 5, 4, 10, 8, 5, -3.3, 4.4, 0];
 
 //Using one of the test arrays as the argument, call your function inside the console.log statement below.
+function minVal(arr) {
+  if (arr.length === 0) {
+    return;
+  }else {
 
-console.log(/* your code here */);
+    let newArr = arr.toString().split(",").sort(function(a,b) {
+      return a-b;
+    });
+    return newArr.shift();
+  }
+}
+console.log(minVal(nums1));
+console.log(minVal(nums2));
+console.log(minVal(nums3));

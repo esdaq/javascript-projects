@@ -20,6 +20,29 @@ function findMinValue(arr){
 
 //Your function here...
 
+let finalArr = [];
+
+
+function minVal(arr) {
+  if (arr.length === 0) {
+    return;
+  }else {
+
+    let newArr = arr.toString().split(",").sort(function(a,b) {
+      return a-b;
+    });
+    return newArr.shift();
+  }
+}
+
+function appendArray(oldArr) {
+  while (oldArr.length > 0) {
+    finalArr.push(minVal(oldArr));
+    oldArr = oldArr.slice(1);
+  }
+  return;
+}
+
 /* BONUS MISSION: Refactor your sorting function to use recursion below:
  */
 
@@ -27,3 +50,6 @@ function findMinValue(arr){
 let nums1 = [5, 10, 2, 42];
 let nums2 = [-2, 0, -10, -44, 5, 3, 0, 3];
 let nums3 = [200, 5, 4, 10, 8, 5, -3.3, 4.4, 0];
+
+console.log(minVal(nums1));
+console.log(appendArray(nums1));
